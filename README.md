@@ -1,9 +1,12 @@
 # App-Factory-2022-Test-Assignment
 Test Assignment
 
-has three screen
+the screens are in this order
+
 index -screen 1
+
 form - screen 2
+
 display -screen 3
 
 the app use
