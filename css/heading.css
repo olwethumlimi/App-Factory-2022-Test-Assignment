@@ -1,0 +1,12 @@
+.heading-1 {
+    font-weight: bold;
+    font-size:25px;
+  }
+.heading-2 {
+    font-weight: bold;
+    font-size:14px;
+    color: var(--primary);
+}
+.heading-1,.heading-2 {
+    margin-top: 10px;
+}

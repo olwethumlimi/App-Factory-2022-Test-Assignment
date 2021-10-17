@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/input.css" />
+    <link rel="stylesheet" href="css/heading.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/item.css" />
+  </head>
+  <body>
+    <div class="navbar-2">
+      <div class="heading-1 center">Results of the survey</div>
+      <!-- <button class="blue-outline-button fill-out" id="back">back</button> -->
+    </div>
+    <!-- main screen -->
+    <div class="screen">
+      <div class="item">
+        <div class="left">Total number of surveys:</div>
+        <div class="right total-surveys">0</div>
+      </div>
+
+      <div class="item">
+        <div class="left">Average age:</div>
+        <div class="right average-age">0</div>
+      </div>
+
+      <div class="item">
+        <div class="left">Oldest person who participated in survey:</div>
+        <div class="right max">0</div>
+      </div>
+
+      <div class="item">
+        <div class="left">Youngest person who participated in survey:</div>
+        <div class="right min">0</div>
+      </div>
+      <br />
+
+      <div class="item">
+        <div class="left">Percentage of people who like Pizza:</div>
+        <div class="right like-pizza">0</div>
+      </div>
+
+      <div class="item">
+        <div class="left">Percentage of people who like Pasta:</div>
+        <div class="right like-pasta">0</div>
+      </div>
+
+      <div class="item">
+        <div class="left">Percentage of people who like Pap and Wors:</div>
+        <div class="right like-pap">0</div>
+      </div>
+
+      <div class="item">
+        <div class="left">Percentage of people who like Chicken stir fry:</div>
+        <div class="right like-chicken">0</div>
+      </div>
+
+
+      <div class="item">
+        <div class="left">Percentage of people who like Beef stir fry:</div>
+        <div class="right like-beef">0</div>
+      </div>
+
+      <div class="item">
+        <div class="left">Percentage of people who like Other:</div>
+        <div class="right like-other">0</div>
+      </div>
+      <br>
+
+      <div class="item">
+        <div class="left">People like to eat out:</div>
+        <div class="right average-eat">0</div>
+      </div>
+
+      <div class="item">
+        <div class="left">People like to watch movies:</div>
+        <div class="right average-movies">0</div>
+      </div>
+
+      <div class="item">
+        <div class="left">People like to watch TV:</div>
+        <div class="right average-tv">0</div>
+      </div>
+
+      <div class="item">
+        <div class="left">People like to listen to the radio:</div>
+        <div class="right average-radio">0</div>
+      </div>
+
+      <div class="center">
+        <button class="blue-fill-button center" id="back">ok</button>
+      </div>
+    </div>
+    <!-- end main screen -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+
+    <script src="cdn/jquery-1.12.3.min.js"></script>
+
+    <script src="database/database-config.js"></script>
+    <script src="database/get-total-surveys.js"></script>
+    <script src="database/get-average.js"></script>
+    <script src="database/get-min-max.js"></script>
+    <script src="database/get-like-item.js"></script>
+
+    <script>
+      $("#back").click(() => {
+        window.location.replace("index.html");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+button {
+    outline: 0;
+    padding: 13px 20px;
+  
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .full-button {
+    width: 100%;
+  }
+  button:active {
+    opacity: 0.5;
+  }
+  .blue-outline-button {
+    border: 2px solid var(--primary);
+    background: white;
+  }
+  .blue-fill-button {
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+    color: white;
+  }
+  

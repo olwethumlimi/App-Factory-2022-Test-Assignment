@@ -1,0 +1,6 @@
+:root {
+    --primary: rgb(0, 153, 255);
+    --secondary: red;
+    --error: red;
+    --shadow: red;
+  }

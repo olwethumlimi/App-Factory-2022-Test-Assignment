@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/input.css" />
+    <link rel="stylesheet" href="css/heading.css" />
+    <link rel="stylesheet" href="css/table.css" />
+  </head>
+  <body>
+    <!-- main screen -->
+    <div class="screen center-screen screen-size-400px">
+      <div class="heading-1 center">Survey System</div>
+      <button class="blue-outline-button full-button fill-out">
+        Fill out Survey
+      </button>
+      <button class="blue-fill-button full-button  view">View Survey results</button>
+    </div>
+    <!-- end main screen -->
+    <script src="cdn/jquery-1.12.3.min.js"></script>
+    <script>
+      //redict to the form page
+      $(".fill-out").click(() => {
+        window.location.replace("form.html");
+      });
+      //redict to the display page
+      $(".view").click(() => {
+        window.location.replace("display.html");
+      });
+    </script>
+  </body>
+</html>
